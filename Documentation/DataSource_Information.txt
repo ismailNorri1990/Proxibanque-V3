@@ -1,0 +1,11 @@
+Name : proxibanquev3
+
+JNDI Name : java:/proxibanquev3
+
+Connection URL : jdbc:mysql://localhost:3306/db_proxibanque-v3
+
+Driver Name : mysql
+
+User Name : root
+
+Password :
