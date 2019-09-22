@@ -1,18 +1,30 @@
 package ma.jobintech.proxibanquev3.entities;
 
+import java.io.Serializable;
+import java.util.Collection;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 
 @Entity
-public class TypeCompte {
+public class TypeCompte implements Serializable {
+	/**
+	 * 
+	 */
+	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	private String libelleTypeCompte;
 	private Long codeTypeCompte;
 	
+	private static final long serialVersionUID = 1L;
+	
+	@OneToMany
+	private Collection<Compte> listeCompte;
 	
 	public Long getId() {
 		return id;

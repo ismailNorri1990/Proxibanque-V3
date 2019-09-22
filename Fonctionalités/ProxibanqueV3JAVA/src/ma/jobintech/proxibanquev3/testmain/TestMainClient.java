@@ -14,13 +14,19 @@ public class TestMainClient {
 
 		try {
 			Context ctx = new InitialContext();
-			IClientEJBRemote proxy = (IClientEJBRemote) ctx.lookup("ejb:/ProxibanqueV3EJB/ClientEJB!ma.jobintech.proxibanquev3.metier.Client.IClientEJBRemote");
+			IClientEJBRemote proxy = (IClientEJBRemote) ctx.lookup("ejb:/ProxibanqueV3EJB/ClientEJB!ma.jobintech.proxibanquev3.metier.client.IClientEJBRemote");
 			
-			ArrayList<Client> cl = (ArrayList<Client>) proxy.recuperClients();
+//			Client client = new Client();
+//			client.setNom("Ismail");
+//			proxy.ajouterClient(client);
 			
-			for (Client client : cl) {
-				System.out.println(client.getAdresse());
-			}
+			
+			proxy.supprimerClient(2l);
+//			ArrayList<Client> cl = (ArrayList<Client>) proxy.ajouterClient(client);
+//
+//			for (Client client : cl) {
+//				System.out.println(client.getAdresse());
+//			}
 		
 		
 		} catch (Exception e) {

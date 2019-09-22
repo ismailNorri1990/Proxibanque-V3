@@ -2524,3 +2524,4 @@ org.eclipse.core.runtime.CoreException: Could not resolve artifact org.infinispa
 2019-09-21 22:05:38,038 [Worker-495: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
 2019-09-21 22:05:38,091 [Worker-495: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: ma.jobintech:ProxibanqueV3:0.0.1-SNAPSHOT @ C:\Users\FOLIO 9740M\Desktop\Proxibanque V3\Fonctionalités\ProxibanqueV3\pom.xml.
 2019-09-21 22:05:38,323 [Worker-495: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 0 sec
+2019-09-22 10:44:42,720 [Worker-137: Updating Maven Dependencies] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: ma.jobintech:ProxibanqueV3:0.0.1-SNAPSHOT @ C:\Users\FOLIO 9740M\Desktop\Proxibanque V3\Fonctionalités\ProxibanqueV3\pom.xml.

@@ -8,7 +8,6 @@ import javax.persistence.PersistenceContext;
 import javax.persistence.Query;
 
 import ma.jobintech.proxibanquev3.entities.Agence;
-import ma.jobintech.proxibanquev3.entities.Client;
 
 @ApplicationScoped
 public class AgenceDaoImpl implements IAgenceDao{

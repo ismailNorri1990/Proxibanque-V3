@@ -1,16 +1,32 @@
 package ma.jobintech.proxibanquev3.entities;
 
+import java.io.Serializable;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
- @Entity
-public class CarteBancaire {
+import javax.persistence.ManyToOne;
+@Entity
+
+public class CarteBancaire implements Serializable {
+	/**
+	 * 
+	 */
+	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	private Long codeCarteBancaire;
 	private boolean active;
+	
+	private static final long serialVersionUID = 1L;
+	
+	@ManyToOne
+	private Compte compte;
+	
+	@ManyToOne
+	private TypeCarteBancaire typeCarteBancaire;
 
 	public long getId() {
 		return id;
@@ -46,5 +62,15 @@ public class CarteBancaire {
 		super();
 		this.active = active;
 	}
+
+	public CarteBancaire(Long codeCarteBancaire, boolean active, Compte compte, TypeCarteBancaire typeCarteBancaire) {
+		super();
+		this.codeCarteBancaire = codeCarteBancaire;
+		this.active = active;
+		this.compte = compte;
+		this.typeCarteBancaire = typeCarteBancaire;
+	}
+	
+	
 
 }

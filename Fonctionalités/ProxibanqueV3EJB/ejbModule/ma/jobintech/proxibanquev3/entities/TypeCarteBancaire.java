@@ -17,10 +17,11 @@ public class TypeCarteBancaire implements Serializable {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
-	private String libelleCarteBancaire;
-	private Long codeCarteBancaire;
+	private String libelleTypeCarteBancaire;
+	private Long codeTypeCarteBancaire;
 	private static final long serialVersionUID = 1L;
 
+	
 	public TypeCarteBancaire() {
 		super();
 	}   
@@ -32,24 +33,25 @@ public class TypeCarteBancaire implements Serializable {
 		this.id = id;
 	}   
 	public String getLibelleCarteBancaire() {
-		return this.libelleCarteBancaire;
+		return this.libelleTypeCarteBancaire;
 	}
 
 	public void setLibelleCarteBancaire(String libelleCarteBancaire) {
-		this.libelleCarteBancaire = libelleCarteBancaire;
+		this.libelleTypeCarteBancaire = libelleCarteBancaire;
 	}   
 	public Long getCodeCarteBancaire() {
-		return this.codeCarteBancaire;
+		return this.codeTypeCarteBancaire;
 	}
 
 	public void setCodeCarteBancaire(Long codeCarteBancaire) {
-		this.codeCarteBancaire = codeCarteBancaire;
+		this.codeTypeCarteBancaire = codeCarteBancaire;
 	}
 	public TypeCarteBancaire(String libelleCarteBancaire, Long codeCarteBancaire) {
 		super();
-		this.libelleCarteBancaire = libelleCarteBancaire;
-		this.codeCarteBancaire = codeCarteBancaire;
+		this.libelleTypeCarteBancaire = libelleCarteBancaire;
+		this.codeTypeCarteBancaire = codeCarteBancaire;
 	}
+	
 	
 	
    

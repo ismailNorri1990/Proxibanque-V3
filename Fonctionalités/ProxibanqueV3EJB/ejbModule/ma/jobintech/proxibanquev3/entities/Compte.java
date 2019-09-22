@@ -1,12 +1,16 @@
 package ma.jobintech.proxibanquev3.entities;
 
 import java.io.Serializable;
+import java.util.Collection;
 import java.util.Date;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
+import javax.persistence.OneToOne;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
@@ -24,6 +28,15 @@ public class Compte implements Serializable {
 	@Temporal(value = TemporalType.TIMESTAMP)
 	private Date dateDeCreation;
 	private static final long serialVersionUID = 1L;
+	
+	@ManyToOne
+    private Client client ;
+	
+	@OneToOne
+	private TypeCompte typeCompte;
+	
+	@OneToMany
+	private Collection<CarteBancaire> listeCarte;
 
 	public Compte() {
 		super();
@@ -62,6 +75,16 @@ public class Compte implements Serializable {
 		this.solde = solde;
 		this.numeroDeCompte = numeroDeCompte;
 		this.dateDeCreation = dateDeCreation;
+	}
+	public Compte(Double solde, Long numeroDeCompte, Date dateDeCreation, Client client, TypeCompte typeCompte,
+			Collection<CarteBancaire> listeCarte) {
+		super();
+		this.solde = solde;
+		this.numeroDeCompte = numeroDeCompte;
+		this.dateDeCreation = dateDeCreation;
+		this.client = client;
+		this.typeCompte = typeCompte;
+		this.listeCarte = listeCarte;
 	}
 	
 	
