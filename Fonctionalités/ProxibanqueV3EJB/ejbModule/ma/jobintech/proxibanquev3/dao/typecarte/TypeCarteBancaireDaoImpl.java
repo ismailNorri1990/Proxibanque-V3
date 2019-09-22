@@ -8,6 +8,7 @@ import javax.persistence.PersistenceContext;
 import javax.persistence.Query;
 
 import ma.jobintech.proxibanquev3.entities.TypeCarteBancaire;
+import ma.jobintech.proxibanquev3.entities.TypeClient;
 
 @ApplicationScoped
 public class TypeCarteBancaireDaoImpl implements ITypeCarteBancaireDao {
@@ -23,7 +24,8 @@ public class TypeCarteBancaireDaoImpl implements ITypeCarteBancaireDao {
 
 	@Override
 	public boolean deleteTypeCarteBancaire(Long id) {
-		entityManager.remove(id);
+		TypeCarteBancaire typecartebancaire = getTypeCarteBancaireById(id);
+		entityManager.remove(typecartebancaire);
 		return true;
 	}
 

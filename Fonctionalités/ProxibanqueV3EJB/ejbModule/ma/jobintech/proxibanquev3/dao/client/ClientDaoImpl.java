@@ -8,6 +8,7 @@ import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 
 import ma.jobintech.proxibanquev3.entities.Client;
+import ma.jobintech.proxibanquev3.entities.TypeClient;
 
 @ApplicationScoped
 public class ClientDaoImpl implements IClientDao {
@@ -23,7 +24,8 @@ public class ClientDaoImpl implements IClientDao {
 
 	@Override
 	public boolean deleteClient(Long id) {
-		entityManager.remove(id);
+		Client client = getClientById(id);
+		entityManager.remove(client);
 		return true;
 	}
 

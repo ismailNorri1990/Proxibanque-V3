@@ -7,6 +7,7 @@ import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.persistence.Query;
 
+import ma.jobintech.proxibanquev3.entities.Client;
 import ma.jobintech.proxibanquev3.entities.TypeCompte;
 
 @ApplicationScoped
@@ -23,7 +24,8 @@ public class TypeCompteDao implements ITypeCompteDao {
 
 	@Override
 	public boolean deleteTypeCompte(Long id) {
-		entityManager.remove(id);
+		TypeCompte typecompte = getTypeCompteById(id);
+		entityManager.remove(typecompte);
 		return true;
 	}
 

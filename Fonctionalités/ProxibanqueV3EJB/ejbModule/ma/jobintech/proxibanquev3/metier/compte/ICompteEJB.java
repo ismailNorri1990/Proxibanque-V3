@@ -15,5 +15,7 @@ public interface ICompteEJB {
 	public Compte recupererCompte(Long id);
 
 	public List<Compte> recuperComptes();
+	
+	public boolean virement(double montant);
 
 }

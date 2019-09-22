@@ -8,6 +8,7 @@ import javax.persistence.PersistenceContext;
 import javax.persistence.Query;
 
 import ma.jobintech.proxibanquev3.entities.CarteBancaire;
+import ma.jobintech.proxibanquev3.entities.TypeClient;
 
 
 
@@ -25,7 +26,8 @@ public class CarteBancaireDaoImpl implements ICarteBancaireDao{
 
 	@Override
 	public boolean deleteCarteBancaire(Long id) {
-		entityManager.remove(id);
+		CarteBancaire carteBancaire = getCarteBancaireById(id);
+		entityManager.remove(carteBancaire);
 		return true;
 	}
 

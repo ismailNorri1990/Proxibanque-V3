@@ -8,6 +8,7 @@ import javax.persistence.PersistenceContext;
 import javax.persistence.Query;
 
 import ma.jobintech.proxibanquev3.entities.Agence;
+import ma.jobintech.proxibanquev3.entities.TypeClient;
 
 @ApplicationScoped
 public class AgenceDaoImpl implements IAgenceDao{
@@ -23,7 +24,8 @@ public class AgenceDaoImpl implements IAgenceDao{
 
 	@Override
 	public boolean deleteAgence(Long id) {
-		entityManager.remove(id);
+		Agence agence = getAgenceById(id);
+		entityManager.remove(agence);
 		return true;
 	}
 

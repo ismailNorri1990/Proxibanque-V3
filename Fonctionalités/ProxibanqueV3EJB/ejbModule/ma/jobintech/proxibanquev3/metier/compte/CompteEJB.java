@@ -47,5 +47,11 @@ public class CompteEJB implements ICompteEJBRemote, ICompteEJBLocal{
 		return compteDao.getAllComptes();
 	}
 
+	@Override
+	public boolean virement(double montant) {
+		
+		return false;
+	}
+
 
 }

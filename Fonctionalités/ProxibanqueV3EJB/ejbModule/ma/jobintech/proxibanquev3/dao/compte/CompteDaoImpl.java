@@ -8,6 +8,7 @@ import javax.persistence.PersistenceContext;
 import javax.persistence.Query;
 
 import ma.jobintech.proxibanquev3.entities.Compte;
+import ma.jobintech.proxibanquev3.entities.TypeClient;
 
 @ApplicationScoped
 public class CompteDaoImpl implements ICompteDao {
@@ -23,7 +24,8 @@ public class CompteDaoImpl implements ICompteDao {
 
 		@Override
 		public boolean deleteCompte(Long id) {
-			entityManager.remove(id);
+			Compte compte = getCompteById(id);
+			entityManager.remove(compte);
 			return true;
 		}
 
@@ -43,6 +45,18 @@ public class CompteDaoImpl implements ICompteDao {
 		public List<Compte> getAllComptes() {
 			Query query = entityManager.createQuery("Select c from Compte c");
 			return query.getResultList();
+		}
+
+		@Override
+		public double augmenterCompte(double montant) {
+			
+			return 0;
+		}
+
+		@Override
+		public double diminuerCompte(double montant) {
+		
+			return 0;
 		}
 
 }

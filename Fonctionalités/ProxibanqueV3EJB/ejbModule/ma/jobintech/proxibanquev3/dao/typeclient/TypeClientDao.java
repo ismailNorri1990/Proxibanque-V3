@@ -8,6 +8,7 @@ import javax.persistence.PersistenceContext;
 import javax.persistence.Query;
 
 import ma.jobintech.proxibanquev3.entities.TypeClient;
+import ma.jobintech.proxibanquev3.entities.TypeCompte;
 
 @ApplicationScoped
 public class TypeClientDao implements ITypeClientDao {
@@ -22,7 +23,8 @@ public class TypeClientDao implements ITypeClientDao {
 
 	@Override
 	public boolean deleteTypeClient(Long id) {
-		entityManager.remove(id);
+		TypeClient typeclient = getTypeClientById(id);
+		entityManager.remove(typeclient);
 		return true;
 	}
 
