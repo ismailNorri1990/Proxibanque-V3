@@ -3,9 +3,19 @@
 	<persistence-unit name="ProxibanqueV3EJB" transaction-type="JTA">
 	<jta-data-source>java:/proxibanquev3</jta-data-source>
 		<class>ma.jobintech.proxibanquev3.entities.Client</class>
+		<class>ma.jobintech.proxibanquev3.entities.ConseillerClient</class>
+		<class>ma.jobintech.proxibanquev3.entities.Agence</class>
+		<class>ma.jobintech.proxibanquev3.entities.Compte</class>
+		<class>ma.jobintech.proxibanquev3.entities.TypeClient</class>
+		<class>ma.jobintech.proxibanquev3.entities.TypeCompte</class>
+		<class>ma.jobintech.proxibanquev3.entities.CarteBancaire</class>
+		<class>ma.jobintech.proxibanquev3.entities.TypeCarteBancaire</class>
 		<properties>
-			<property name="javax.persistence.schema-generation.database.action" value="update"/>
+			<property name="javax.persistence.schema-generation.database.action" value="drop-and-create"/>
+			<property name="javax.persistence.jdbc.url"	value="jdbc:mysql://localhost:3306/db_proxibanque-v3"></property>
+			<property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"></property>
+			<property name="javax.persistence.jdbc.user" value="root"></property>
+			<property name="javax.persistence.jdbc.password" value=""/>
 		</properties>
-		
 	</persistence-unit>
 </persistence>

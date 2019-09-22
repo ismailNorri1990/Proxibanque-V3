@@ -188,9 +188,84 @@
   <path value="C:/wildfly-17.0.1.Final/modules/system/layers/base/org/wildfly/security/elytron-private/main/wildfly-elytron-auth-util-1.9.1.Final.jar"/>
  </paths>
  <validation>
+  <core validator-id="jboss.cdi.core">
+   <linked-resource name="%1;%2;%3;%4;%5;" path="%0"/>
+   <linked-resource name="%7;%8;%9;%10;" path="%6"/>
+   <linked-resource name="%12;" path="%11"/>
+   <linked-resource name="%1;" path="%13"/>
+   <linked-resource name="%2;" path="%14"/>
+   <linked-resource name="%7;%8;%9;%10;" path="%15"/>
+   <linked-resource name="%12;" path="%16"/>
+   <linked-resource name="%18;" path="%17"/>
+   <linked-resource name="%10;" path="%19"/>
+   <linked-resource name="%2;" path="%20"/>
+   <linked-resource name="%18;" path="%21"/>
+   <linked-resource name="%1;" path="%22"/>
+   <linked-resource name="%1;%2;%3;%4;%5;" path="%23"/>
+   <linked-resource name="%25;" path="%24"/>
+   <linked-resource name="%10;" path="%26"/>
+   <linked-resource name="%25;" path="%27"/>
+  </core>
   <el/>
  </validation>
- <aliases/>
+ <aliases>
+  <alias
+   path="/ProxibanqueV3EJB/ejbModule/ma/jobintech/proxibanquev3/metier/typecartebancaire/TypeClientEJB.java" value="%3"/>
+  <alias
+   path="/ProxibanqueV3EJB/ejbModule/ma/jobintech/proxibanquev3/dao/typecarte/TypeCarteBancaireDaoImpl.java" value="%14"/>
+  <alias
+   path="/ProxibanqueV3EJB/ejbModule/ma/jobintech/proxibanquev3/metier/cartebancaire/CarteBancaireEJB.java" value="%10"/>
+  <alias
+   path="/ProxibanqueV3EJB/ejbModule/ma/jobintech/proxibanquev3/dao/typecompte/ITypeCompteDao.java" value="%22"/>
+  <alias
+   path="/ProxibanqueV3EJB/ejbModule/ma/jobintech/proxibanquev3/dao/typeclient/ITypeClientDao.java" value="%0"/>
+  <alias
+   path="/ProxibanqueV3EJB/ejbModule/ma/jobintech/proxibanquev3/metier/Client/ClientEJB.java" value="%7"/>
+  <alias
+   path="/ProxibanqueV3EJB/ejbModule/ma/jobintech/proxibanquev3/metier/typecompte/TypeCompteEJB.java" value="%1"/>
+  <alias
+   path="/ProxibanqueV3EJB/ejbModule/ma/jobintech/proxibanquev3/metier/client/ClientEJB.java" value="%8"/>
+  <alias
+   path="/ProxibanqueV3EJB/ejbModule/ma/jobintech/proxibanquev3/metier/cartebancaire/ClientEJB.java" value="%9"/>
+  <alias
+   path="/ProxibanqueV3EJB/ejbModule/ma/jobintech/proxibanquev3/metier/typecompte/TypeClientEJB.java" value="%5"/>
+  <alias
+   path="/ProxibanqueV3EJB/ejbModule/ma/jobintech/proxibanquev3/dao/cartebancaire/ICarteBancaireDao.java" value="%19"/>
+  <alias
+   path="/ProxibanqueV3EJB/ejbModule/ma/jobintech/proxibanquev3/dao/typeclient/TypeClientDao.java" value="%23"/>
+  <alias
+   path="/ProxibanqueV3EJB/ejbModule/ma/jobintech/proxibanquev3/metier/compte/CompteEJB.java" value="%25"/>
+  <alias
+   path="/ProxibanqueV3EJB/ejbModule/ma/jobintech/proxibanquev3/metier/typecartebancaire/TypeCarteBancaireEJB.java" value="%2"/>
+  <alias
+   path="/ProxibanqueV3EJB/ejbModule/ma/jobintech/proxibanquev3/metier/conseillerclient/ConseillerClientEJB.java" value="%12"/>
+  <alias
+   path="/ProxibanqueV3EJB/ejbModule/ma/jobintech/proxibanquev3/metier/agence/AgenceEJB.java" value="%18"/>
+  <alias
+   path="/ProxibanqueV3EJB/ejbModule/ma/jobintech/proxibanquev3/dao/typecarte/ITypeCarteBancaireDao.java" value="%20"/>
+  <alias
+   path="/ProxibanqueV3EJB/ejbModule/ma/jobintech/proxibanquev3/dao/client/IClientDao.java" value="%15"/>
+  <alias
+   path="/ProxibanqueV3EJB/ejbModule/ma/jobintech/proxibanquev3/dao/compte/ICompteDao.java" value="%24"/>
+  <alias
+   path="/ProxibanqueV3EJB/ejbModule/ma/jobintech/proxibanquev3/dao/cartebancaire/CarteBancaireDaoImpl.java" value="%26"/>
+  <alias
+   path="/ProxibanqueV3EJB/ejbModule/ma/jobintech/proxibanquev3/dao/conseillerclient/ConseillerClientDaoImpl.java" value="%16"/>
+  <alias
+   path="/ProxibanqueV3EJB/ejbModule/ma/jobintech/proxibanquev3/dao/agence/IAgenceDao.java" value="%17"/>
+  <alias
+   path="/ProxibanqueV3EJB/ejbModule/ma/jobintech/proxibanquev3/dao/typecompte/TypeCompteDao.java" value="%13"/>
+  <alias
+   path="/ProxibanqueV3EJB/ejbModule/ma/jobintech/proxibanquev3/dao/agence/AgenceDaoImpl.java" value="%21"/>
+  <alias
+   path="/ProxibanqueV3EJB/ejbModule/ma/jobintech/proxibanquev3/dao/compte/CompteDaoImpl.java" value="%27"/>
+  <alias
+   path="/ProxibanqueV3EJB/ejbModule/ma/jobintech/proxibanquev3/metier/typeclient/TypeClientEJB.java" value="%4"/>
+  <alias
+   path="/ProxibanqueV3EJB/ejbModule/ma/jobintech/proxibanquev3/dao/client/ClientDaoImpl.java" value="%6"/>
+  <alias
+   path="/ProxibanqueV3EJB/ejbModule/ma/jobintech/proxibanquev3/dao/conseillerclient/IConseillerClientDao.java" value="%11"/>
+ </aliases>
  <includes/>
  <uris/>
 </kb-project>

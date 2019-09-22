@@ -1,9 +1,13 @@
 package ma.jobintech.proxibanquev3.entities;
 
 import java.io.Serializable;
-import java.lang.Long;
-import java.lang.String;
-import javax.persistence.*;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
 
 /**
  * Entity implementation class for Entity: Client
@@ -27,7 +31,7 @@ public class Client implements Serializable {
 	private String ville;
 	private static final long serialVersionUID = 1L;
 
-	  
+	
 	public Long getId() {
 		return this.id;
 	}
