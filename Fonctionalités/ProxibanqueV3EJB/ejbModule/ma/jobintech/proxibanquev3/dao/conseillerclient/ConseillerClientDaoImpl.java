@@ -18,6 +18,4 @@ public class ConseillerClientDaoImpl implements IConseillerClientDao {
 		query.setParameter("login", login);
 		return (ConseillerClient) query.getSingleResult();
 	}
-
-
 }

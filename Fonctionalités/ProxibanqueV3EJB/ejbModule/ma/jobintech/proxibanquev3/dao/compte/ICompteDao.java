@@ -16,8 +16,10 @@ public interface ICompteDao {
 
 	List<Compte> getAllComptes();
 
-	public double augmenterCompte(double montant);
+	Compte getCompteByNumeroCompte(Long numeroCompte);
 
-	public double diminuerCompte(double montant);
+	boolean pay(double montant, long numeroCompte);
+
+	boolean remove(double montant, long numeroCompte);
 
 }

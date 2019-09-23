@@ -4,6 +4,7 @@ import java.io.Serializable;
 import java.util.Collection;
 
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -23,7 +24,7 @@ public class TypeCompte implements Serializable {
 	
 	private static final long serialVersionUID = 1L;
 	
-	@OneToMany
+	@OneToMany(fetch = FetchType.LAZY)
 	private Collection<Compte> listeCompte;
 	
 	public Long getId() {

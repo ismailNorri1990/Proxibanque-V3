@@ -15,7 +15,13 @@ public interface ICompteEJB {
 	public Compte recupererCompte(Long id);
 
 	public List<Compte> recuperComptes();
-	
-	public boolean virement(double montant);
+
+	Compte recupCpteParNumCpte(Long numeroCompte);
+
+	boolean verser(double montant, long numeroCompte);
+
+	boolean retirer(double montant, long numeroCompte);
+
+	boolean virement(Double montant, Long comptePay, Long compteRemove);
 
 }

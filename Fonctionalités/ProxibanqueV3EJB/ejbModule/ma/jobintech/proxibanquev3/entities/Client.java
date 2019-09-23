@@ -6,6 +6,7 @@ import java.util.Collection;
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -41,7 +42,7 @@ public class Client implements Serializable {
 	@OneToOne
 	private TypeClient typeClient;
 	
-	@OneToMany(cascade = CascadeType.ALL,orphanRemoval=true)
+	@OneToMany(fetch = FetchType.LAZY,cascade = CascadeType.ALL,orphanRemoval=true)
 	private Collection<Compte> compte;
 	
 	public Long getId() {

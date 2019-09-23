@@ -46,11 +46,29 @@ public class CompteEJB implements ICompteEJBRemote, ICompteEJBLocal{
 	public List<Compte> recuperComptes() {
 		return compteDao.getAllComptes();
 	}
+	
+	@Override
+	public boolean virement(Double montant ,Long comptePay , Long compteRemove) {
+		verser(montant, comptePay);
+		retirer(montant, compteRemove);
+		return true;
+	}
 
 	@Override
-	public boolean virement(double montant) {
-		
-		return false;
+	public Compte recupCpteParNumCpte(Long numeroCompte) {
+		return compteDao.getCompteByNumeroCompte(numeroCompte);
+	}
+
+	@Override
+	public boolean verser(double montant, long numeroCompte) {
+		compteDao.pay(montant, numeroCompte);
+		return true;
+	}
+
+	@Override
+	public boolean retirer(double montant, long numeroCompte) {
+		compteDao.remove(montant, numeroCompte);
+		return true;
 	}
 
 

@@ -6,9 +6,10 @@ import javax.ejb.EJB;
 import javax.enterprise.context.SessionScoped;
 import javax.inject.Named;
 
+import ma.jobintech.proxibanquev3.entities.ConseillerClient;
 import ma.jobintech.proxibanquev3.metier.conseillerclient.IConseillerClientEJBLocal;
 
-@Named /* ("loginBean") */
+@Named ("loginBean")
 @SessionScoped
 public class LoginBean implements Serializable {
 
@@ -42,10 +43,14 @@ public class LoginBean implements Serializable {
 
 	public String returnAction() {
 		System.out.println("in returnAction");
-		if (conseillerClientEJBLocal.recupererConseillerClient(this.login) != null && conseillerClientEJBLocal.recupererConseillerClient(this.login).getPassword() == password)
-			return "OK";
-			else 
-			return "ERREUR";
+		ConseillerClient cc = conseillerClientEJBLocal.recupererConseillerClient(this.login);
+		if (cc != null)
+			if(cc.getPassword().equals(password)) {
+				return "OK";
+			} else if(cc == null) {
+				return "ERREUR";
+			}
+		return "ERREUR";
 	}
 
 }

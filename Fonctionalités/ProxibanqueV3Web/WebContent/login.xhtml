@@ -2,24 +2,46 @@
 	xmlns:h="http://xmlns.jcp.org/jsf/html">
 <f:view>
 	<h:head>
+		<meta charset="utf-8"></meta>
+		<meta name="viewport"
+			content="width=device-width, initial-scale=1, shrink-to-fit=no"></meta>
+		<link rel="stylesheet"
+			href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
 		<title>login</title>
 	</h:head>
 	<h:body>
-		<h1  >Proxibanque V3</h1>
-		<h:form>
-			<h3>Authentification Conseiller</h3>
-			<h:outputText value="Login" />
-			<h:inputText id="login" value="#{LoginBean.login}"></h:inputText>
-			<br></br>
-			<br></br>
+		<div class="container">
 
-			<h:outputText value="Password" />
-			<h:inputText id="password" value="#{LoginBean.password}"></h:inputText>
-			<br></br>
-			<br></br>
+			<div class="row">
+				<div class="col-sm-7"></div>
+				<div class="col-sm-5">
+					<h1 class="h1 text-primary">Proxibanque V3</h1>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-7"></div>
+				<div class="col align-self-center col-sm-5">
+					<div class="bg-dark">
+						<h3>Authentification Conseiller</h3>
+					</div>
 
-			<h:commandButton class="btn btn-warning" action="#{LoginBean.returnAction}" value="Login"></h:commandButton>
-		</h:form>
+					<h:form>
+
+
+						<h:outputText value="Login" />
+						<h:inputText id="login" value="#{loginBean.login}"></h:inputText>
+						<br></br>
+						<br></br>
+
+						<h:outputText value="Password" />
+						<h:inputText id="password" value="#{loginBean.password}"></h:inputText>
+						<h:commandButton action="#{loginBean.returnAction}" value="Login"></h:commandButton>
+
+					</h:form>
+				</div>
+			</div>
+		</div>
+
 	</h:body>
 </f:view>
 </html>
