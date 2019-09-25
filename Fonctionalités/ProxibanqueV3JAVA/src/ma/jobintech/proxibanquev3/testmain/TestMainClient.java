@@ -1,11 +1,8 @@
 package ma.jobintech.proxibanquev3.testmain;
 
-import java.util.ArrayList;
-
 import javax.naming.Context;
 import javax.naming.InitialContext;
 
-import ma.jobintech.proxibanquev3.entities.Client;
 import ma.jobintech.proxibanquev3.metier.client.IClientEJBRemote;
 
 public class TestMainClient {

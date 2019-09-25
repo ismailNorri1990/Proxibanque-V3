@@ -2,13 +2,19 @@ package ma.jobintech.proxibanquev3.entities;
 
 import java.io.Serializable;
 
+import javax.persistence.DiscriminatorColumn;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Inheritance;
+import javax.persistence.InheritanceType;
+import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
-@Entity
 
+@Entity
+@Inheritance(strategy = InheritanceType.SINGLE_TABLE)
+@DiscriminatorColumn(name = "Type_Carte")
 public class CarteBancaire implements Serializable {
 	/**
 	 * 
@@ -23,10 +29,10 @@ public class CarteBancaire implements Serializable {
 	private static final long serialVersionUID = 1L;
 	
 	@ManyToOne
+	@JoinColumn(name="COMPTE")
 	private Compte compte;
 	
-	@ManyToOne
-	private TypeCarteBancaire typeCarteBancaire;
+	
 
 	public long getId() {
 		return id;
@@ -63,13 +69,6 @@ public class CarteBancaire implements Serializable {
 		this.active = active;
 	}
 
-	public CarteBancaire(Long codeCarteBancaire, boolean active, Compte compte, TypeCarteBancaire typeCarteBancaire) {
-		super();
-		this.codeCarteBancaire = codeCarteBancaire;
-		this.active = active;
-		this.compte = compte;
-		this.typeCarteBancaire = typeCarteBancaire;
-	}
 	
 	
 

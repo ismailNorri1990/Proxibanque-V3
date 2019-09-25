@@ -2,18 +2,18 @@ package ma.jobintech.proxibanquev3.metier.typecartebancaire;
 
 import java.util.List;
 
-import ma.jobintech.proxibanquev3.entities.TypeCarteBancaire;
+import ma.jobintech.proxibanquev3.entities.Carte1;
 
 public interface ITypeCarteBancaireEJB {
 
-	boolean ajouterTypeCarteBancaire(TypeCarteBancaire typeCarte);
+	boolean ajouterTypeCarteBancaire(Carte1 typeCarte);
 
 	boolean supprimerTypeCarteBancaire(Long id);
 
-	boolean modifierTypeCarteBancaire(TypeCarteBancaire typeCarte);
+	boolean modifierTypeCarteBancaire(Carte1 typeCarte);
 
-	TypeCarteBancaire recupererTypeCarteBancaire(Long id);
+	Carte1 recupererTypeCarteBancaire(Long id);
 
-	List<TypeCarteBancaire> recuperTypeCartesBancaires();
+	List<Carte1> recuperTypeCartesBancaires();
 
 }

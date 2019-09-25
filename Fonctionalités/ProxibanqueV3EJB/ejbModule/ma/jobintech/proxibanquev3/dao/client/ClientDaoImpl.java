@@ -2,13 +2,12 @@ package ma.jobintech.proxibanquev3.dao.client;
 
 import java.util.List;
 
-import javax.persistence.Query;
 import javax.enterprise.context.ApplicationScoped;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
+import javax.persistence.Query;
 
 import ma.jobintech.proxibanquev3.entities.Client;
-import ma.jobintech.proxibanquev3.entities.TypeClient;
 
 @ApplicationScoped
 public class ClientDaoImpl implements IClientDao {

@@ -7,8 +7,7 @@ import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.persistence.Query;
 
-import ma.jobintech.proxibanquev3.entities.TypeCarteBancaire;
-import ma.jobintech.proxibanquev3.entities.TypeClient;
+import ma.jobintech.proxibanquev3.entities.Carte1;
 
 @ApplicationScoped
 public class TypeCarteBancaireDaoImpl implements ITypeCarteBancaireDao {
@@ -17,33 +16,33 @@ public class TypeCarteBancaireDaoImpl implements ITypeCarteBancaireDao {
 	EntityManager entityManager;
 
 	@Override
-	public boolean addTypeCarteBancaire(TypeCarteBancaire typeCarteBancaire) {
+	public boolean addTypeCarteBancaire(Carte1 typeCarteBancaire) {
 		entityManager.persist(typeCarteBancaire);
 		return true;
 	}
 
 	@Override
 	public boolean deleteTypeCarteBancaire(Long id) {
-		TypeCarteBancaire typecartebancaire = getTypeCarteBancaireById(id);
+		Carte1 typecartebancaire = getTypeCarteBancaireById(id);
 		entityManager.remove(typecartebancaire);
 		return true;
 	}
 
 	@Override
-	public boolean updateTypeCarteBancaire(TypeCarteBancaire typeCarteBancaire) {
+	public boolean updateTypeCarteBancaire(Carte1 typeCarteBancaire) {
 		entityManager.merge(typeCarteBancaire);
 		return true;
 	}
 
 	@Override
-	public TypeCarteBancaire getTypeCarteBancaireById(Long id) {
-		return entityManager.find(TypeCarteBancaire.class, id);
+	public Carte1 getTypeCarteBancaireById(Long id) {
+		return entityManager.find(Carte1.class, id);
 		
 	}
 
 	@SuppressWarnings("unchecked")
 	@Override
-	public List<TypeCarteBancaire> getAllTypeCartesBancaires() {
+	public List<Carte1> getAllTypeCartesBancaires() {
 		Query query = entityManager.createQuery("Select tc from TypeCarteBancaire tc");
 		return query.getResultList(); 
 	}

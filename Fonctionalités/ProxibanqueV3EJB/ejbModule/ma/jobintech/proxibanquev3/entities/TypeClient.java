@@ -1,10 +1,11 @@
 package ma.jobintech.proxibanquev3.entities;
 
 import java.io.Serializable;
-import java.util.Collection;
+import java.util.ArrayList;
+import java.util.List;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
-import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -24,8 +25,8 @@ public class TypeClient implements Serializable {
 	
 	private static final long serialVersionUID = 1L;
 	
-	@OneToMany(fetch = FetchType.LAZY)
-	private Collection<Client> client;
+	@OneToMany(mappedBy = "typeClient", cascade = CascadeType.ALL)
+	private List<Client> client = new ArrayList<Client>();
 	
 	
 	public Long getId() {

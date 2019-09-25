@@ -1,17 +1,18 @@
 package ma.jobintech.proxibanquev3.entities;
 
 import java.io.Serializable;
-import java.util.Collection;
+import java.util.ArrayList;
+import java.util.List;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
-import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
 /**
@@ -36,15 +37,32 @@ public class Client implements Serializable {
 	private String ville;
 	private static final long serialVersionUID = 1L;
 
-	@OneToOne
-	private ConseillerClient client;
+	@ManyToOne 
+	@JoinColumn(name="CLIENT_ID")	
+	private ConseillerClient conseillerClient;
 	
-	@OneToOne
+	@ManyToOne
+	@JoinColumn(name = "CLIENT")
 	private TypeClient typeClient;
 	
-	@OneToMany(fetch = FetchType.LAZY,cascade = CascadeType.ALL,orphanRemoval=true)
-	private Collection<Compte> compte;
+	@OneToMany(mappedBy = "client",cascade = CascadeType.ALL)
+	private List<Compte> compte = new ArrayList<Compte>();
 	
+	public Client(String nom, String prenom, String raison_social, Long telephone, String adresse, int code_postal,
+			String ville, ConseillerClient conseillerClient, TypeClient typeClient, List<Compte> compte) {
+		super();
+		this.nom = nom;
+		this.prenom = prenom;
+		this.raison_social = raison_social;
+		this.telephone = telephone;
+		this.adresse = adresse;
+		this.code_postal = code_postal;
+		this.ville = ville;
+		this.conseillerClient = conseillerClient;
+		this.typeClient = typeClient;
+		this.compte = compte;
+	}
+
 	public Long getId() {
 		return this.id;
 	}
@@ -119,28 +137,9 @@ public class Client implements Serializable {
 		this.ville = ville;
 	}
 
-	public Client(String nom, String prenom, String raison_social, Long telephone, String adresse, int code_postal,
-			String ville, Agence agence, TypeClient typeClient, Collection<Compte> compte) {
-		super();
-		this.nom = nom;
-		this.prenom = prenom;
-		this.raison_social = raison_social;
-		this.telephone = telephone;
-		this.adresse = adresse;
-		this.code_postal = code_postal;
-		this.ville = ville;
-		this.typeClient = typeClient;
-		this.compte = compte;
-	}
 
 
-	@Override
-	public String toString() {
-		return "Client [nom=" + nom + ", prenom=" + prenom + ", raison_social=" + raison_social + ", telephone="
-				+ telephone + ", adresse=" + adresse + ", code_postal=" + code_postal + ", ville=" + ville + ", client="
-				+ client + ", typeClient=" + typeClient + ", compte=" + compte + "]";
-	}
-	
+
 	
    
 }

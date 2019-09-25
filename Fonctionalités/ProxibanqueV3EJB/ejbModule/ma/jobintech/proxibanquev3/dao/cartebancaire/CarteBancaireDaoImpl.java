@@ -8,7 +8,6 @@ import javax.persistence.PersistenceContext;
 import javax.persistence.Query;
 
 import ma.jobintech.proxibanquev3.entities.CarteBancaire;
-import ma.jobintech.proxibanquev3.entities.TypeClient;
 
 
 

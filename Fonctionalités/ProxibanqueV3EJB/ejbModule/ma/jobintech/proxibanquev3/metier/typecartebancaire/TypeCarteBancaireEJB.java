@@ -6,7 +6,7 @@ import javax.ejb.Stateless;
 import javax.inject.Inject;
 
 import ma.jobintech.proxibanquev3.dao.typecarte.ITypeCarteBancaireDao;
-import ma.jobintech.proxibanquev3.entities.TypeCarteBancaire;
+import ma.jobintech.proxibanquev3.entities.Carte1;
 
 
 @Stateless
@@ -18,7 +18,7 @@ public class TypeCarteBancaireEJB implements ITypeCarteBancaireEJBRemote, ITypeC
 
 	
 	@Override
-	public boolean ajouterTypeCarteBancaire(TypeCarteBancaire typeCarte) {
+	public boolean ajouterTypeCarteBancaire(Carte1 typeCarte) {
 		typeCarteBancaireDao.addTypeCarteBancaire(typeCarte);
 		return true;
 	}
@@ -30,18 +30,18 @@ public class TypeCarteBancaireEJB implements ITypeCarteBancaireEJBRemote, ITypeC
 	}
 
 	@Override
-	public boolean modifierTypeCarteBancaire(TypeCarteBancaire typeCarteBancaire) {
+	public boolean modifierTypeCarteBancaire(Carte1 typeCarteBancaire) {
 		typeCarteBancaireDao.updateTypeCarteBancaire(typeCarteBancaire);
 		return true;
 	}
 
 	@Override
-	public TypeCarteBancaire recupererTypeCarteBancaire(Long id) {
+	public Carte1 recupererTypeCarteBancaire(Long id) {
 		return typeCarteBancaireDao.getTypeCarteBancaireById(id);
 	}
 
 	@Override
-	public List<TypeCarteBancaire> recuperTypeCartesBancaires() {
+	public List<Carte1> recuperTypeCartesBancaires() {
 		return typeCarteBancaireDao.getAllTypeCartesBancaires();
 	}
 

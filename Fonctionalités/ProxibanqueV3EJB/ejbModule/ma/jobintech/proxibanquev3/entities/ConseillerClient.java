@@ -1,12 +1,15 @@
 package ma.jobintech.proxibanquev3.entities;
 
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.OneToOne;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 /**
@@ -24,10 +27,18 @@ public class ConseillerClient implements Serializable {
 	private String login;
 	private String password;
 	private static final long serialVersionUID = 1L;
+
+	 @OneToMany(mappedBy = "conseillerClient",cascade = CascadeType.ALL)
+	 private List<Client> listeClient = new ArrayList<Client>();
 	
-	@OneToOne
-	private Agence agence;
-	
+
+	public ConseillerClient(String login, String password, List<Client> listeClient) {
+		super();
+		this.login = login;
+		this.password = password;
+		this.listeClient = listeClient;
+	}
+
 	public Long getId_conseillerClient() {
 		return this.id_conseillerClient;
 	}
@@ -58,13 +69,6 @@ public class ConseillerClient implements Serializable {
 		super();
 		this.login = login;
 		this.password = password;
-	}
-
-	public ConseillerClient(String login, String password, Agence agence) {
-		super();
-		this.login = login;
-		this.password = password;
-		this.agence = agence;
 	}
 
 }

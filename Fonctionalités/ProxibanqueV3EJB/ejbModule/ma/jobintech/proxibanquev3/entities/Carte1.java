@@ -3,6 +3,9 @@ package ma.jobintech.proxibanquev3.entities;
 import java.io.Serializable;
 import java.lang.Long;
 import java.lang.String;
+import java.util.ArrayList;
+import java.util.List;
+
 import javax.persistence.*;
 
 /**
@@ -10,28 +13,20 @@ import javax.persistence.*;
  *
  */
 @Entity
+@DiscriminatorValue("Carte1")
 
-public class TypeCarteBancaire implements Serializable {
-
-	   
-	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Long id;
+public class Carte1 extends CarteBancaire implements Serializable {
+	
+	
 	private String libelleTypeCarteBancaire;
 	private Long codeTypeCarteBancaire;
 	private static final long serialVersionUID = 1L;
-
 	
-	public TypeCarteBancaire() {
+	
+	public Carte1() {
 		super();
 	}   
-	public Long getId() {
-		return this.id;
-	}
-
-	public void setId(Long id) {
-		this.id = id;
-	}   
+	
 	public String getLibelleCarteBancaire() {
 		return this.libelleTypeCarteBancaire;
 	}
@@ -46,11 +41,13 @@ public class TypeCarteBancaire implements Serializable {
 	public void setCodeCarteBancaire(Long codeCarteBancaire) {
 		this.codeTypeCarteBancaire = codeCarteBancaire;
 	}
-	public TypeCarteBancaire(String libelleCarteBancaire, Long codeCarteBancaire) {
+	public Carte1(String libelleCarteBancaire, Long codeCarteBancaire) {
 		super();
 		this.libelleTypeCarteBancaire = libelleCarteBancaire;
 		this.codeTypeCarteBancaire = codeCarteBancaire;
 	}
+
+	
 	
 	
 	
