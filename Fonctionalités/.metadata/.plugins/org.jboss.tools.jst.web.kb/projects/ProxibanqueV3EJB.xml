@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <kb-project>
  <depends-on-projects/>
- <used-by-projects/>
+ <used-by-projects>
+  <project name="ProxibanqueV3Web"/>
+ </used-by-projects>
  <paths>
   <path value="C:/wildfly-17.0.1.Final/modules/system/layers/base/org/wildfly/security/elytron-private/main/wildfly-elytron-sasl-anonymous-1.9.1.Final.jar"/>
   <path value="C:/wildfly-17.0.1.Final/modules/system/layers/base/javax/management/j2ee/api/main/jboss-j2eemgmt-api_1.1_spec-1.0.2.Final.jar"/>
@@ -21,12 +23,15 @@
   <path value="C:/wildfly-17.0.1.Final/modules/system/layers/base/org/wildfly/security/elytron-private/main/wildfly-elytron-x500-1.9.1.Final.jar"/>
   <path value="C:/wildfly-17.0.1.Final/modules/system/layers/base/org/wildfly/security/elytron-private/main/wildfly-elytron-mechanism-http-1.9.1.Final.jar"/>
   <path value="C:/wildfly-17.0.1.Final/modules/system/layers/base/org/wildfly/security/elytron-private/main/wildfly-elytron-credential-store-1.9.1.Final.jar"/>
+  <path value="C:/Users/FOLIO 9740M/Desktop/livraisons/TP Job In Tech/Semaine 1/Formation Java/Outils/eclipse/plugins/org.junit.platform.engine_1.4.0.v20190212-2109.jar"/>
   <path value="C:/wildfly-17.0.1.Final/modules/system/layers/base/org/wildfly/security/elytron-private/main/wildfly-elytron-asn1-1.9.1.Final.jar"/>
   <path value="C:/wildfly-17.0.1.Final/modules/system/layers/base/org/wildfly/security/elytron-private/main/wildfly-elytron-ssl-1.9.1.Final.jar"/>
   <path value="C:/wildfly-17.0.1.Final/modules/system/layers/base/org/wildfly/security/elytron-private/main/wildfly-elytron-jacc-1.9.1.Final.jar"/>
   <path value="C:/wildfly-17.0.1.Final/modules/system/layers/base/org/wildfly/security/elytron-private/main/wildfly-elytron-client-1.9.1.Final.jar"/>
   <path value="C:/wildfly-17.0.1.Final/modules/system/layers/base/org/wildfly/security/elytron-private/main/wildfly-elytron-realm-1.9.1.Final.jar"/>
   <path value="C:/wildfly-17.0.1.Final/modules/system/layers/base/javax/annotation/api/main/jboss-annotations-api_1.3_spec-1.0.1.Final.jar"/>
+  <path value="C:/Users/FOLIO 9740M/Desktop/livraisons/TP Job In Tech/Semaine 1/Formation Java/Outils/eclipse/plugins/org.junit.platform.runner_1.4.0.v20190212-2109.jar"/>
+  <path value="C:/Users/FOLIO 9740M/Desktop/livraisons/TP Job In Tech/Semaine 1/Formation Java/Outils/eclipse/plugins/org.junit_4.12.0.v201504281640/junit.jar"/>
   <path value="C:/wildfly-17.0.1.Final/modules/system/layers/base/org/wildfly/security/elytron-private/main/wildfly-elytron-util-1.9.1.Final.jar"/>
   <path value="C:/wildfly-17.0.1.Final/modules/system/layers/base/org/wildfly/security/elytron-private/main/wildfly-elytron-sasl-digest-1.9.1.Final.jar"/>
   <path value="C:/wildfly-17.0.1.Final/modules/system/layers/base/org/wildfly/security/elytron-private/main/wildfly-elytron-auth-server-1.9.1.Final.jar"/>
@@ -34,10 +39,13 @@
   <path value="C:/wildfly-17.0.1.Final/modules/system/layers/base/javax/faces/api/main/jboss-jsf-api_2.3_spec-2.3.9.SP02.jar"/>
   <path value="C:/wildfly-17.0.1.Final/modules/system/layers/base/org/wildfly/security/elytron-private/main/wildfly-elytron-http-form-1.9.1.Final.jar"/>
   <path value="C:/wildfly-17.0.1.Final/modules/system/layers/base/org/picketbox/main/picketbox-commons-1.0.0.final.jar"/>
+  <path value="C:/Users/FOLIO 9740M/Desktop/livraisons/TP Job In Tech/Semaine 1/Formation Java/Outils/eclipse/plugins/org.junit.platform.suite.api_1.4.0.v20190212-2109.jar"/>
   <path value="C:/wildfly-17.0.1.Final/modules/system/layers/base/javax/enterprise/api/main/cdi-api-2.0.SP1.jar"/>
   <path value="C:/wildfly-17.0.1.Final/modules/system/layers/base/javax/xml/ws/api/main/jboss-jaxws-api_2.3_spec-1.0.0.Final.jar"/>
+  <path value="C:/Users/FOLIO 9740M/Desktop/livraisons/TP Job In Tech/Semaine 1/Formation Java/Outils/eclipse/plugins/org.hamcrest.core_1.3.0.v20180420-1519.jar"/>
   <path value="C:/wildfly-17.0.1.Final/modules/system/layers/base/org/jboss/ejb3/main/jboss-ejb3-ext-api-2.3.0.Final.jar"/>
   <path value="C:/wildfly-17.0.1.Final/modules/system/layers/base/org/wildfly/security/elytron-private/main/wildfly-elytron-auth-1.9.1.Final.jar"/>
+  <path value="C:/Users/FOLIO 9740M/Desktop/livraisons/TP Job In Tech/Semaine 1/Formation Java/Outils/eclipse/plugins/org.opentest4j_1.1.1.v20190212-2109.jar"/>
   <path value="C:/wildfly-17.0.1.Final/modules/system/layers/base/javax/jws/api/main/jsr181-api-1.0-MR1.jar"/>
   <path value="C:/wildfly-17.0.1.Final/modules/system/layers/base/org/wildfly/security/elytron-private/main/wildfly-elytron-security-manager-1.9.1.Final.jar"/>
   <path value="C:/wildfly-17.0.1.Final/modules/system/layers/base/org/wildfly/security/elytron-private/main/wildfly-elytron-sasl-deprecated-1.9.1.Final.jar"/>
@@ -87,6 +95,7 @@
   <path value="C:/wildfly-17.0.1.Final/modules/system/layers/base/org/wildfly/security/elytron-private/main/wildfly-elytron-http-deprecated-1.9.1.Final.jar"/>
   <path value="C:/wildfly-17.0.1.Final/modules/system/layers/base/javax/security/auth/message/api/main/jboss-jaspi-api_1.1_spec-1.0.2.Final.jar"/>
   <path value="C:/wildfly-17.0.1.Final/modules/system/layers/base/org/wildfly/security/elytron-private/main/wildfly-elytron-mechanism-gssapi-1.9.1.Final.jar"/>
+  <path value="C:/Users/FOLIO 9740M/Desktop/livraisons/TP Job In Tech/Semaine 1/Formation Java/Outils/eclipse/plugins/org.apiguardian_1.0.0.v20190212-2109.jar"/>
   <path value="C:/wildfly-17.0.1.Final/modules/system/layers/base/org/wildfly/security/elytron-private/main/wildfly-elytron-http-basic-1.9.1.Final.jar"/>
   <path value="C:/wildfly-17.0.1.Final/modules/system/layers/base/org/wildfly/security/elytron-private/main/wildfly-elytron-realm-jdbc-1.9.1.Final.jar"/>
   <path value="C:/wildfly-17.0.1.Final/modules/system/layers/base/org/wildfly/security/elytron-private/main/wildfly-elytron-x500-cert-acme-1.9.1.Final.jar"/>
@@ -107,10 +116,13 @@
   <path value="C:/wildfly-17.0.1.Final/modules/system/layers/base/org/wildfly/security/elytron-private/main/wildfly-elytron-sasl-external-1.9.1.Final.jar"/>
   <path value="C:/wildfly-17.0.1.Final/modules/system/layers/base/org/wildfly/security/elytron-private/main/wildfly-elytron-credential-source-deprecated-1.9.1.Final.jar"/>
   <path value="C:/wildfly-17.0.1.Final/modules/system/layers/base/org/wildfly/security/elytron-private/main/wildfly-elytron-http-cert-1.9.1.Final.jar"/>
+  <path value="C:/Users/FOLIO 9740M/Desktop/livraisons/TP Job In Tech/Semaine 1/Formation Java/Outils/eclipse/plugins/org.junit.platform.launcher_1.4.0.v20190212-2109.jar"/>
   <path value="C:/wildfly-17.0.1.Final/modules/system/layers/base/org/jboss/logging/main/jboss-logging-3.4.0.Final.jar"/>
   <path value="C:/wildfly-17.0.1.Final/modules/system/layers/base/javax/transaction/api/main/jboss-transaction-api_1.2_spec-1.1.1.Final.jar"/>
+  <path value="C:/Users/FOLIO 9740M/Desktop/livraisons/TP Job In Tech/Semaine 1/Formation Java/Outils/eclipse/plugins/org.junit.platform.commons_1.4.0.v20190212-2109.jar"/>
   <path value="C:/wildfly-17.0.1.Final/modules/system/layers/base/org/wildfly/security/elytron-private/main/wildfly-elytron-mechanism-digest-1.9.1.Final.jar"/>
   <path value="C:/wildfly-17.0.1.Final/modules/system/layers/base/org/wildfly/security/elytron-private/main/wildfly-elytron-realm-token-1.9.1.Final.jar"/>
+  <path value="C:/Users/FOLIO 9740M/Desktop/livraisons/TP Job In Tech/Semaine 1/Formation Java/Outils/eclipse/plugins/org.junit.jupiter.api_5.4.0.v20190212-2109.jar"/>
   <path value="C:/wildfly-17.0.1.Final/modules/system/layers/base/javax/servlet/jstl/api/main/taglibs-standard-impl-1.2.6-RC1.jar">
    <libraries>
     <library class="tld">
@@ -178,93 +190,93 @@
   <path value="C:/wildfly-17.0.1.Final/modules/system/layers/base/org/wildfly/security/elytron-private/main/wildfly-elytron-http-sso-1.9.1.Final.jar"/>
   <path value="C:/wildfly-17.0.1.Final/modules/system/layers/base/javax/servlet/jstl/api/main/taglibs-standard-spec-1.2.6-RC1.jar"/>
   <path value="C:/wildfly-17.0.1.Final/modules/system/layers/base/javax/servlet/api/main/jboss-servlet-api_4.0_spec-1.0.0.Final.jar"/>
+  <path value="C:/Users/FOLIO 9740M/Desktop/livraisons/TP Job In Tech/Semaine 1/Formation Java/Outils/eclipse/plugins/org.junit.vintage.engine_5.4.0.v20190212-2109.jar"/>
   <path value="C:/wildfly-17.0.1.Final/modules/system/layers/base/javax/ejb/api/main/jboss-ejb-api_3.2_spec-1.0.2.Final.jar"/>
+  <path value="C:/Users/FOLIO 9740M/Desktop/livraisons/TP Job In Tech/Semaine 1/Formation Java/Outils/eclipse/plugins/org.junit.jupiter.engine_5.4.0.v20190212-2109.jar"/>
   <path value="C:/wildfly-17.0.1.Final/modules/system/layers/base/org/wildfly/security/elytron-private/main/wildfly-elytron-sasl-oauth2-1.9.1.Final.jar"/>
+  <path value="C:/Users/FOLIO 9740M/Desktop/livraisons/TP Job In Tech/Semaine 1/Formation Java/Outils/eclipse/plugins/org.junit.jupiter.params_5.4.0.v20190212-2109.jar"/>
   <path value="C:/wildfly-17.0.1.Final/modules/system/layers/base/org/jboss/resteasy/resteasy-jaxrs/main/resteasy-client-microprofile-3.7.0.Final.jar"/>
   <path value="C:/wildfly-17.0.1.Final/modules/system/layers/base/org/wildfly/common/main/wildfly-common-1.5.1.Final.jar"/>
   <path value="C:/wildfly-17.0.1.Final/modules/system/layers/base/org/wildfly/security/elytron-private/main/wildfly-elytron-sasl-gssapi-1.9.1.Final.jar"/>
   <path value="C:/wildfly-17.0.1.Final/modules/system/layers/base/org/wildfly/security/elytron-private/main/wildfly-elytron-sasl-plain-1.9.1.Final.jar"/>
   <path value="C:/wildfly-17.0.1.Final/modules/system/layers/base/javax/mail/api/main/javax.mail-1.6.2.jar"/>
+  <path value="C:/Users/FOLIO 9740M/Desktop/livraisons/TP Job In Tech/Semaine 1/Formation Java/Outils/eclipse/plugins/org.junit.jupiter.migrationsupport_5.4.0.v20190212-2109.jar"/>
   <path value="C:/wildfly-17.0.1.Final/modules/system/layers/base/org/wildfly/security/elytron-private/main/wildfly-elytron-auth-util-1.9.1.Final.jar"/>
  </paths>
  <validation>
   <core validator-id="jboss.cdi.core">
-   <linked-resource name="%1;%2;%3;%4;%5;" path="%0"/>
-   <linked-resource name="%7;%8;%9;%10;" path="%6"/>
+   <linked-resource name="%1;" path="%0"/>
+   <linked-resource name="%3;%4;%5;%6;" path="%2"/>
+   <linked-resource name="%8;" path="%7"/>
+   <linked-resource name="%10;" path="%9"/>
    <linked-resource name="%12;" path="%11"/>
-   <linked-resource name="%1;" path="%13"/>
-   <linked-resource name="%2;" path="%14"/>
-   <linked-resource name="%7;%8;%9;%10;" path="%15"/>
-   <linked-resource name="%12;" path="%16"/>
-   <linked-resource name="%18;" path="%17"/>
-   <linked-resource name="%10;" path="%19"/>
-   <linked-resource name="%2;" path="%20"/>
-   <linked-resource name="%18;" path="%21"/>
-   <linked-resource name="%1;" path="%22"/>
-   <linked-resource name="%1;%2;%3;%4;%5;" path="%23"/>
-   <linked-resource name="%25;" path="%24"/>
-   <linked-resource name="%10;" path="%26"/>
-   <linked-resource name="%25;" path="%27"/>
+   <linked-resource name="%3;%4;%5;%6;" path="%13"/>
+   <linked-resource name="%8;" path="%14"/>
+   <linked-resource name="%16;" path="%15"/>
+   <linked-resource name="%6;" path="%17"/>
+   <linked-resource name="%12;" path="%18"/>
+   <linked-resource name="%16;" path="%19"/>
+   <linked-resource name="%10;" path="%20"/>
+   <linked-resource name="%1;" path="%21"/>
+   <linked-resource name="%23;" path="%22"/>
+   <linked-resource name="%6;" path="%24"/>
+   <linked-resource name="%23;" path="%25"/>
   </core>
   <el/>
  </validation>
  <aliases>
   <alias
-   path="/ProxibanqueV3EJB/ejbModule/ma/jobintech/proxibanquev3/metier/typecartebancaire/TypeClientEJB.java" value="%3"/>
+   path="/ProxibanqueV3EJB/ejbModule/ma/jobintech/proxibanquev3/dao/typecarte/TypeCarteBancaireDaoImpl.java" value="%11"/>
   <alias
-   path="/ProxibanqueV3EJB/ejbModule/ma/jobintech/proxibanquev3/dao/typecarte/TypeCarteBancaireDaoImpl.java" value="%14"/>
+   path="/ProxibanqueV3EJB/ejbModule/ma/jobintech/proxibanquev3/metier/cartebancaire/CarteBancaireEJB.java" value="%6"/>
   <alias
-   path="/ProxibanqueV3EJB/ejbModule/ma/jobintech/proxibanquev3/metier/cartebancaire/CarteBancaireEJB.java" value="%10"/>
-  <alias
-   path="/ProxibanqueV3EJB/ejbModule/ma/jobintech/proxibanquev3/dao/typecompte/ITypeCompteDao.java" value="%22"/>
+   path="/ProxibanqueV3EJB/ejbModule/ma/jobintech/proxibanquev3/dao/typecompte/ITypeCompteDao.java" value="%20"/>
   <alias
    path="/ProxibanqueV3EJB/ejbModule/ma/jobintech/proxibanquev3/dao/typeclient/ITypeClientDao.java" value="%0"/>
   <alias
-   path="/ProxibanqueV3EJB/ejbModule/ma/jobintech/proxibanquev3/metier/Client/ClientEJB.java" value="%7"/>
+   path="/ProxibanqueV3EJB/ejbModule/ma/jobintech/proxibanquev3/metier/Client/ClientEJB.java" value="%3"/>
   <alias
-   path="/ProxibanqueV3EJB/ejbModule/ma/jobintech/proxibanquev3/metier/typecompte/TypeCompteEJB.java" value="%1"/>
+   path="/ProxibanqueV3EJB/ejbModule/ma/jobintech/proxibanquev3/metier/client/ClientEJB.java" value="%4"/>
   <alias
-   path="/ProxibanqueV3EJB/ejbModule/ma/jobintech/proxibanquev3/metier/client/ClientEJB.java" value="%8"/>
+   path="/ProxibanqueV3EJB/ejbModule/ma/jobintech/proxibanquev3/metier/typecompte/TypeCompteEJB.java" value="%10"/>
   <alias
-   path="/ProxibanqueV3EJB/ejbModule/ma/jobintech/proxibanquev3/metier/cartebancaire/ClientEJB.java" value="%9"/>
+   path="/ProxibanqueV3EJB/ejbModule/ma/jobintech/proxibanquev3/metier/cartebancaire/ClientEJB.java" value="%5"/>
   <alias
-   path="/ProxibanqueV3EJB/ejbModule/ma/jobintech/proxibanquev3/metier/typecompte/TypeClientEJB.java" value="%5"/>
+   path="/ProxibanqueV3EJB/ejbModule/ma/jobintech/proxibanquev3/dao/cartebancaire/ICarteBancaireDao.java" value="%17"/>
   <alias
-   path="/ProxibanqueV3EJB/ejbModule/ma/jobintech/proxibanquev3/dao/cartebancaire/ICarteBancaireDao.java" value="%19"/>
+   path="/ProxibanqueV3EJB/ejbModule/ma/jobintech/proxibanquev3/dao/typeclient/TypeClientDao.java" value="%21"/>
   <alias
-   path="/ProxibanqueV3EJB/ejbModule/ma/jobintech/proxibanquev3/dao/typeclient/TypeClientDao.java" value="%23"/>
+   path="/ProxibanqueV3EJB/ejbModule/ma/jobintech/proxibanquev3/metier/compte/CompteEJB.java" value="%23"/>
   <alias
-   path="/ProxibanqueV3EJB/ejbModule/ma/jobintech/proxibanquev3/metier/compte/CompteEJB.java" value="%25"/>
+   path="/ProxibanqueV3EJB/ejbModule/ma/jobintech/proxibanquev3/metier/typecartebancaire/TypeCarteBancaireEJB.java" value="%12"/>
   <alias
-   path="/ProxibanqueV3EJB/ejbModule/ma/jobintech/proxibanquev3/metier/typecartebancaire/TypeCarteBancaireEJB.java" value="%2"/>
+   path="/ProxibanqueV3EJB/ejbModule/ma/jobintech/proxibanquev3/metier/conseillerclient/ConseillerClientEJB.java" value="%8"/>
   <alias
-   path="/ProxibanqueV3EJB/ejbModule/ma/jobintech/proxibanquev3/metier/conseillerclient/ConseillerClientEJB.java" value="%12"/>
+   path="/ProxibanqueV3EJB/ejbModule/ma/jobintech/proxibanquev3/metier/agence/AgenceEJB.java" value="%16"/>
   <alias
-   path="/ProxibanqueV3EJB/ejbModule/ma/jobintech/proxibanquev3/metier/agence/AgenceEJB.java" value="%18"/>
+   path="/ProxibanqueV3EJB/ejbModule/ma/jobintech/proxibanquev3/dao/typecarte/ITypeCarteBancaireDao.java" value="%18"/>
   <alias
-   path="/ProxibanqueV3EJB/ejbModule/ma/jobintech/proxibanquev3/dao/typecarte/ITypeCarteBancaireDao.java" value="%20"/>
+   path="/ProxibanqueV3EJB/ejbModule/ma/jobintech/proxibanquev3/dao/client/IClientDao.java" value="%13"/>
   <alias
-   path="/ProxibanqueV3EJB/ejbModule/ma/jobintech/proxibanquev3/dao/client/IClientDao.java" value="%15"/>
+   path="/ProxibanqueV3EJB/ejbModule/ma/jobintech/proxibanquev3/dao/compte/ICompteDao.java" value="%22"/>
   <alias
-   path="/ProxibanqueV3EJB/ejbModule/ma/jobintech/proxibanquev3/dao/compte/ICompteDao.java" value="%24"/>
+   path="/ProxibanqueV3EJB/ejbModule/ma/jobintech/proxibanquev3/dao/cartebancaire/CarteBancaireDaoImpl.java" value="%24"/>
   <alias
-   path="/ProxibanqueV3EJB/ejbModule/ma/jobintech/proxibanquev3/dao/cartebancaire/CarteBancaireDaoImpl.java" value="%26"/>
+   path="/ProxibanqueV3EJB/ejbModule/ma/jobintech/proxibanquev3/dao/conseillerclient/ConseillerClientDaoImpl.java" value="%14"/>
   <alias
-   path="/ProxibanqueV3EJB/ejbModule/ma/jobintech/proxibanquev3/dao/conseillerclient/ConseillerClientDaoImpl.java" value="%16"/>
+   path="/ProxibanqueV3EJB/ejbModule/ma/jobintech/proxibanquev3/dao/agence/IAgenceDao.java" value="%15"/>
   <alias
-   path="/ProxibanqueV3EJB/ejbModule/ma/jobintech/proxibanquev3/dao/agence/IAgenceDao.java" value="%17"/>
+   path="/ProxibanqueV3EJB/ejbModule/ma/jobintech/proxibanquev3/dao/typecompte/TypeCompteDao.java" value="%9"/>
   <alias
-   path="/ProxibanqueV3EJB/ejbModule/ma/jobintech/proxibanquev3/dao/typecompte/TypeCompteDao.java" value="%13"/>
+   path="/ProxibanqueV3EJB/ejbModule/ma/jobintech/proxibanquev3/dao/agence/AgenceDaoImpl.java" value="%19"/>
   <alias
-   path="/ProxibanqueV3EJB/ejbModule/ma/jobintech/proxibanquev3/dao/agence/AgenceDaoImpl.java" value="%21"/>
+   path="/ProxibanqueV3EJB/ejbModule/ma/jobintech/proxibanquev3/dao/compte/CompteDaoImpl.java" value="%25"/>
   <alias
-   path="/ProxibanqueV3EJB/ejbModule/ma/jobintech/proxibanquev3/dao/compte/CompteDaoImpl.java" value="%27"/>
+   path="/ProxibanqueV3EJB/ejbModule/ma/jobintech/proxibanquev3/metier/typeclient/TypeClientEJB.java" value="%1"/>
   <alias
-   path="/ProxibanqueV3EJB/ejbModule/ma/jobintech/proxibanquev3/metier/typeclient/TypeClientEJB.java" value="%4"/>
+   path="/ProxibanqueV3EJB/ejbModule/ma/jobintech/proxibanquev3/dao/client/ClientDaoImpl.java" value="%2"/>
   <alias
-   path="/ProxibanqueV3EJB/ejbModule/ma/jobintech/proxibanquev3/dao/client/ClientDaoImpl.java" value="%6"/>
-  <alias
-   path="/ProxibanqueV3EJB/ejbModule/ma/jobintech/proxibanquev3/dao/conseillerclient/IConseillerClientDao.java" value="%11"/>
+   path="/ProxibanqueV3EJB/ejbModule/ma/jobintech/proxibanquev3/dao/conseillerclient/IConseillerClientDao.java" value="%7"/>
  </aliases>
  <includes/>
  <uris/>
