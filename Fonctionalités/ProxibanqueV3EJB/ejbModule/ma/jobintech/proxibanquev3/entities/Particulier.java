@@ -1,40 +1,39 @@
 package ma.jobintech.proxibanquev3.entities;
 
 import java.io.Serializable;
-import java.util.ArrayList;
-import java.util.List;
 
-import javax.persistence.CascadeType;
+import javax.persistence.DiscriminatorValue;
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.OneToMany;
 
 @Entity
-public class TypeClient implements Serializable {
+@DiscriminatorValue("Particulier")
+public class Particulier extends Client implements Serializable {
 	/**
 	 * 
 	 */
 	
-	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Long id;
+	private String nom;
+	private String prenom;
 	private String libelleTypeClient;
 	private Long codeTypeClient;
 	
 	private static final long serialVersionUID = 1L;
 	
-	@OneToMany(mappedBy = "typeClient", cascade = CascadeType.ALL)
-	private List<Client> client = new ArrayList<Client>();
 	
-	
-	public Long getId() {
-		return id;
+	public String getNom() {
+		return nom;
 	}
-	public void setId(Long id) {
-		this.id = id;
+	public void setNom(String nom) {
+		this.nom = nom;
 	}
+	public String getPrenom() {
+		return prenom;
+	}
+	public void setPrenom(String prenom) {
+		this.prenom = prenom;
+	}
+
+
 	public String getLibelleTypeClient() {
 		return libelleTypeClient;
 	}
@@ -47,11 +46,11 @@ public class TypeClient implements Serializable {
 	public void setCodeTypeClient(Long codeTypeClient) {
 		this.codeTypeClient = codeTypeClient;
 	}
-	public TypeClient() {
+	public Particulier() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-	public TypeClient(String libelleTypeClient, Long codeTypeClient) {
+	public Particulier(String libelleTypeClient, Long codeTypeClient) {
 		super();
 		this.libelleTypeClient = libelleTypeClient;
 		this.codeTypeClient = codeTypeClient;

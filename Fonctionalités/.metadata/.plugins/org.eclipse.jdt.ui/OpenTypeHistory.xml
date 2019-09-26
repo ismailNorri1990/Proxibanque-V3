@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <typeInfoHistroy>
-    <typeInfo handle="=ProxibanqueV3EJB/ejbModule&lt;ma.jobintech.proxibanquev3.entities{Agence.java[Agence" modifiers="1" timestamp="1569153143376"/>
     <typeInfo handle="=ProxibanqueV3EJB/C:\/Program Files\/Java\/jdk-12.0.1\/lib\/jrt-fs.jar`java.base&lt;java.util(Date.class[Date" modifiers="33" timestamp="1561988649696"/>
-    <typeInfo handle="=ProxibanqueV3EJB/ejbModule&lt;ma.jobintech.proxibanquev3.entities{TypeClient.java[TypeClient" modifiers="1" timestamp="1569251185037"/>
-    <typeInfo handle="=ProxibanqueV3EJB/ejbModule&lt;ma.jobintech.proxibanquev3.entities{TypeCompte.java[TypeCompte" modifiers="1" timestamp="1569251197824"/>
-    <typeInfo handle="=ProxibanqueV3EJB/ejbModule&lt;ma.jobintech.proxibanquev3.entities{CarteBancaire.java[CarteBancaire" modifiers="1" timestamp="1569152698615"/>
+    <typeInfo handle="=ProxibanqueV3EJB/ejbModule&lt;ma.jobintech.proxibanquev3.entities{TypeClient.java[TypeClient" modifiers="1" timestamp="1569353833971"/>
+    <typeInfo handle="=ProxibanqueV3EJB/ejbModule&lt;ma.jobintech.proxibanquev3.entities{TypeCompte.java[TypeCompte" modifiers="1" timestamp="1569353856219"/>
+    <typeInfo handle="=ProxibanqueV3EJB/ejbModule&lt;ma.jobintech.proxibanquev3.entities{CarteBancaire.java[CarteBancaire" modifiers="1" timestamp="1569399809780"/>
     <typeInfo handle="=ProxibanqueV3Web/C:\/Program Files\/Java\/jdk-12.0.1\/lib\/jrt-fs.jar`jdk.compiler&lt;com.sun.source.doctree(SerialDataTree.class[SerialDataTree" modifiers="1537" timestamp="1561988649696"/>
     <typeInfo handle="=ProxibanqueV3EJB/ejbModule&lt;ma.jobintech.proxibanquev3.metier.compte{CompteEJB.java[CompteEJB" modifiers="1" timestamp="1569197769033"/>
     <typeInfo handle="=ProxibanqueV3Web/C:\/Program Files\/Java\/jdk-12.0.1\/lib\/jrt-fs.jar`java.base&lt;java.io(Serializable.class[Serializable" modifiers="1537" timestamp="1561988649696"/>
+    <typeInfo handle="=ProxibanqueV3EJB/ejbModule&lt;ma.jobintech.proxibanquev3.entities{Carte2.java[Carte2" modifiers="1" timestamp="1569399891005"/>
 </typeInfoHistroy>

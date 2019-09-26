@@ -5,11 +5,13 @@
 		<class>ma.jobintech.proxibanquev3.entities.Client</class>
 		<class>ma.jobintech.proxibanquev3.entities.ConseillerClient</class>
 		<class>ma.jobintech.proxibanquev3.entities.Compte</class>
-		<class>ma.jobintech.proxibanquev3.entities.TypeClient</class>
-		<class>ma.jobintech.proxibanquev3.entities.TypeCompte</class>
+		<class>ma.jobintech.proxibanquev3.entities.ComptePrincipal</class>
 		<class>ma.jobintech.proxibanquev3.entities.CarteBancaire</class>
 		<class>ma.jobintech.proxibanquev3.entities.Carte1</class>
 		<class>ma.jobintech.proxibanquev3.entities.Carte2</class>
+		<class>ma.jobintech.proxibanquev3.entities.Entreprise</class>
+		<class>ma.jobintech.proxibanquev3.entities.Particulier</class>
+		<class>ma.jobintech.proxibanquev3.entities.CompteEpargne</class>
 		<properties>
 			<property name="javax.persistence.schema-generation.database.action" value="drop-and-create"/>
 			<property name="javax.persistence.jdbc.url"	value="jdbc:mysql://localhost:3306/db_proxibanque-v3"></property>

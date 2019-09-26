@@ -2,15 +2,17 @@ package ma.jobintech.proxibanquev3.entities;
 
 import java.io.Serializable;
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.Date;
 import java.util.List;
 
 import javax.persistence.CascadeType;
+import javax.persistence.DiscriminatorColumn;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Inheritance;
+import javax.persistence.InheritanceType;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
@@ -20,6 +22,8 @@ import javax.persistence.TemporalType;
 
 @Entity
 @Table(name = "Comptes")
+@Inheritance(strategy = InheritanceType.SINGLE_TABLE)
+@DiscriminatorColumn(name = "Type_Compte")
 public class Compte implements Serializable {
 
 	   
@@ -35,10 +39,6 @@ public class Compte implements Serializable {
 	@ManyToOne
 	@JoinColumn(name = "CLIENT")
     private Client client ;
-	
-	@ManyToOne
-	@JoinColumn(name = "COMPTE")
-	private TypeCompte typeCompte;
 	
 	@OneToMany(mappedBy = "compte",cascade = CascadeType.ALL)
 	private List<CarteBancaire> listeCarte = new ArrayList<CarteBancaire>();
@@ -81,14 +81,13 @@ public class Compte implements Serializable {
 		this.numeroDeCompte = numeroDeCompte;
 		this.dateDeCreation = dateDeCreation;
 	}
-	public Compte(Double solde, Long numeroDeCompte, Date dateDeCreation, Client client, TypeCompte typeCompte,
+	public Compte(Double solde, Long numeroDeCompte, Date dateDeCreation, Client client, ComptePrincipal typeCompte,
 			List<CarteBancaire> listeCarte) {
 		super();
 		this.solde = solde;
 		this.numeroDeCompte = numeroDeCompte;
 		this.dateDeCreation = dateDeCreation;
 		this.client = client;
-		this.typeCompte = typeCompte;
 		this.listeCarte = listeCarte;
 	}
 
